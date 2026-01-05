@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nike Website</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="navtop">
+    <div class="navitem">
+      <a href="https://www.nike.com/in/" target="_blank">
+        <img src="./Images/nike logo.png" width="75" height="75" class="logo">
+      </a>
+    </div>
+
+    <div class="Search">
+      <input type="text" placeholder="Search" class="searchitem">
+      <img src="./Images/search icon.png" class="searchicon">
+    </div>
+
+    <div class="navitem">
+      <span class="limitedoffer">Limited Offer!</span>
+    </div>
+  </div>
+
+  <div class="navbottom">
+    <h3 class="menuitem">Nike Air</h3>
+    <h3 class="menuitem">Nike FlyEase</h3>
+    <h3 class="menuitem">Nike Free</h3>
+    <h3 class="menuitem">Nike React</h3>
+    <h3 class="menuitem">Nike ZoomX</h3>
+  </div>
+</nav>
+
+<div class="slider">
+  <div class="sliderwrapper">
+
+    <div class="slideritem">
+      <img src="./Images/Nike air.png" class="sliderimg1">
+      <div class="sliderbg1"></div>
+      <h1 class="slidertitle1">Nike Air</h1>
+      <h2 class="sliderprice">Rs 4299</h2>
+      <a href="#product" class="buybutton">Buy Now!</a>
+    </div>
+
+    <div class="slideritem">
+      <img src="./Images/nike flyease.png" class="sliderimg2">
+      <div class="sliderbg2"></div>
+      <h1 class="slidertitle2">Nike FlyEase</h1>
+      <h2 class="sliderprice">Rs 8499</h2>
+      <a href="#product" class="buybutton">Buy Now!</a>
+    </div>
+
+    <div class="slideritem">
+      <img src="./Images/Nike Free.png" class="sliderimg3">
+      <div class="sliderbg3"></div>
+      <h1 class="slidertitle3">Nike Free</h1>
+      <h2 class="sliderprice">Rs 3599</h2>
+      <a href="#product" class="buybutton">Buy Now!</a>
+    </div>
+
+    <div class="slideritem">
+      <img src="./Images/Nike React.png" class="sliderimg4">
+      <div class="sliderbg4"></div>
+      <h1 class="slidertitle4">Nike React</h1>
+      <h2 class="sliderprice">Rs 9699</h2>
+      <a href="#product" class="buybutton">Buy Now!</a>
+    </div>
+
+    <div class="slideritem">
+      <img src="./Images/Nike Zoomx.png" class="sliderimg">
+      <div class="sliderbg5"></div>
+      <h1 class="slidertitle5">Nike ZoomX</h1>
+      <h2 class="sliderprice">Rs 10299</h2>
+      <a href="#product" class="buybutton">Buy Now!</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="product" id="product">
+  <img src="./Images/nike Air.png" class="productimage">
+
+  <div class="productdetails">
+    <h1 class="producttitle">Nike Air</h1>
+    <h2 class="productprice">Rs 4299</h2>
+
+    <p class="productdesc">
+      Nike Air technology consists of pressurised air inside a tough yet flexible bag,
+      providing flexibility and impact protection.
+    </p>
+
+    <div class="colors">
+      <div class="color">1</div>
+      <div class="color">2</div>
+    </div>
+
+    <div class="sizes">
+      <div class="size">8</div>
+      <div class="size">9</div>
+      <div class="size">10</div>
+    </div>
+
+    <button class="productbutton">Pay Now</button>
+  </div>
+
+  <!-- PAYMENT MODAL -->
+  <div class="payment">
+    <h2 class="paytitle">Personal Information</h2>
+
+    <label>Name</label>
+    <input type="text" placeholder="Amit Avhad" class="payinput" id="nameInput">
+
+    <label>Contact</label>
+    <input type="text" placeholder="+91 XXXXX XXXXX" class="payinput" id="contactInput">
+
+    <label>Address</label>
+    <input type="text" placeholder="Address with pincode" class="payinput" id="addressInput">
+
+    <h2 class="paytitle">Payment Information</h2>
+    <img src="./Images/card log.jpeg" class="cardlogo" width="100">
+
+    <input type="text" placeholder="Card Number" class="payinput">
+
+    <div class="cardinfo">
+      <input type="text" placeholder="MM" class="payinput">
+      <input type="text" placeholder="YYYY" class="payinput">
+      <input type="text" placeholder="CVV" class="payinput">
+    </div>
+
+    <button class="paybutton" id="btn">Checkout!</button>
+    <span class="close">X</span>
+  </div>
+</div>
+
+<!-- ORDER PLACED -->
+<div class="placed">
+  <img src="./Images/payment done.png" class="orderplaced">
+  <h3 class="success">Order Placed Successfully!</h3>
+
+  <div class="detailss">
+    <h4 class="details" id="detailsname">Name:</h4>
+    <h4 class="details" id="detailscont">Contact:</h4>
+    <h4 class="details" id="detailsaddr">Address:</h4>
+  </div>
+
+  <button class="end">Done!</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
