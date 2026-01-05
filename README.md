@@ -8,7 +8,7 @@ interactions.
 ---
 
 ## 🌐 Live Demo
-👉 https://amitavhad911.github.io/nike-website/
+👉  https://amitavhad911.github.io/nike-website/
 
 ---
 
